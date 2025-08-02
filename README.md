@@ -2,7 +2,7 @@
 
 This repository contains two deep learning projects focused on financial time series forecasting using Long Short-Term Memory (LSTM) networks:
 
-- Apple Stock Price Prediction (`apple_stock_price_prediction_lstm/`)  
+- Apple Stock Price Prediction (`Apple_stock_price_prediction_lstm/`)  
 - Bitcoin Price Prediction (`BTCp_price_prediction_lstm/`)
 
 Both projects aim to predict future prices based on historical data, leveraging the strengths of LSTM in capturing temporal dependencies in sequential data.
@@ -32,7 +32,7 @@ This project applies a similar LSTM architecture to predict Bitcoin prices, usin
 ## Folder Structure
 /Financial_Forecasting_Deep_Learning <br>
 │ <br>
-├── apple_stock_price_prediction_lstm <br>
+├── Apple_stock_price_prediction_lstm <br>
 └── BTCp_price_prediction_lstm 
 
 ## Requirements
