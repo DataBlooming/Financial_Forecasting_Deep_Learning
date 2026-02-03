@@ -15,13 +15,18 @@ This project demonstrates a complete workflow for predicting wind power generati
 
 ## Folder Structure
 
-Wind_Power_Forecast//
-├─ notebooks/ - 'wind_forecast_lstm_and_sarima.ipynb` (Model training and experiments)  
-├─ api/ - 'api_forecast.py` (FastAPI code)  
-├─ models/ - 'lstm_wind_forecast_model.keras` (Trained LSTM model), `wind_scaler.pkl` (Scaler for preprocessing)  
-├─ logs/ - 'sample_prediction_log.csv` (Example prediction logs)  
-├─ README.md  
-└─ requirements.txt  
+Wind_Power_Forecast/
+├─ notebooks/
+│ └─ wind_forecast_lstm_and_sarima.ipynb # Model training and experiments
+├─ api/
+│ └─ api_forecast.py # FastAPI code
+├─ models/
+│ ├─ lstm_wind_forecast_model.keras # Trained LSTM model
+│ └─ wind_scaler.pkl # Scaler for preprocessing
+├─ logs/
+│ └─ sample_prediction_log.csv # Example prediction logs
+├─ README.md
+└─ requirements.txt
 
 ## How to Use
 
