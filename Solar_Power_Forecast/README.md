@@ -52,7 +52,7 @@ pip install fastapi uvicorn tensorflow joblib numpy pydantic
 python api/api_solar_forecast.py
 
 3. Access the prediction endpoint:
-POST http://127.0.0.1:8001/predict_solar
+POST http://127.0.0.1:8001/docs
 
 4. Input format: (for example)
 {
@@ -73,9 +73,9 @@ POST http://127.0.0.1:8001/predict_solar
 
 ## Notes
 
-TIMESTEPS = 60
-Logs are saved in solar_prediction_log.csv
-Ensure model and scaler files are in the models/ folder
-The API uses LSTM for real-time prediction.
+- **TIMESTEPS** = 60
+- Logs are saved in `solar_prediction_log.csv`
+- Ensure model and scaler files are in the `models/` folder
+- The API uses LSTM for real-time prediction; SARIMA models were tested separately for comparison
 
 
