@@ -28,7 +28,7 @@ Two different models are used for forecasting:
 
 ## Project Structure
 
-```
+ ``` 
 Solar_Power_Forecast/
 ├─ models/ # Trained LSTM model and scaler
 │ ├─ solar_forecast_lstm_and_sarima.ipynb
@@ -39,7 +39,7 @@ Solar_Power_Forecast/
 ├─ prediction_log/ # Sample input data for testing
 │ └─ solar_prediction_log.xls
 └─ README.md
-´´´
+ ``` 
 
 ## How to Run API
 
@@ -56,17 +56,22 @@ POST http://127.0.0.1:8001/predict_solar
 
 4. Input format: (for example)
 {
-  "recent_days": [5000, 5020, 4980, ..., 5010]  # 60 days
+  "recent_days": [5000, 5020, 4980, 5010, 5025, 4995, 5000, 5015, 4990, 5005,
+                  5012, 4998, 5003, 5018, 4989, 5001, 5010, 4997, 5020, 5004,
+                  5013, 4992, 5009, 5021, 4996, 5006, 5017, 4988, 5022, 5000,
+                  5011, 4994, 5007, 5024, 4986, 5003, 5014, 4991, 5026, 5005,
+                  5016, 4993, 5002, 5028, 4987, 5009, 5015, 4999, 5020, 5001,
+                  5012, 4995, 5008, 5023, 4989, 5004, 5011, 4996, 5025, 5003]
 }
 
-5. Output: (for example)
+5. Output example
 {
   "prediction": 5025.3,
   "model_version": "LSTM_SOLAR_v1_2026-02-04"
 }
-´´´
+ ``` 
 
-## How to Run API
+## Notes
 
 TIMESTEPS = 60
 Logs are saved in solar_prediction_log.csv
