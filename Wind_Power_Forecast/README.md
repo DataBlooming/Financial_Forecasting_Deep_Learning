@@ -33,10 +33,10 @@ Wind_Power_Forecast/
 ## How to Use
 
 1. Run the API:  
-   uvicorn api.api_forecast:app --reload --host 0.0.0.0 --port 8000
-   Access API documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+   - uvicorn api.api_forecast:app --reload --host 0.0.0.0 --port 8000
+   - Access API documentation at: http://127.0.0.1:8000/docs
 
-2. Make Predictions by POSTing to `/predict` with JSON payload:  
+2. Make Predictions by POSTing to `/predict`:  
    {
   "recent_days": [7700, 7720, 7750, ..., 8400]
    }
@@ -48,8 +48,6 @@ Wind_Power_Forecast/
 
 Install dependencies:  
 pip install tensorflow numpy joblib fastapi uvicorn pydantic
-Or with `requirements.txt`:  
-
 
 ## Notes
 
